@@ -1,0 +1,16 @@
+<!-- File: javascript/interactive.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head><title>JS Snippet</title></head>
+<body>
+    <h1 id="message">Click the button!</h1>
+    <button id="actionButton">Change Message</button>
+    <script>
+        const message = document.getElementById('message');
+        const button = document.getElementById('actionButton');
+        button.addEventListener('click', () => {
+            message.textContent = 'Hello from a JavaScript snippet!';
+        });
+    </script>
+</body>
+</html>
